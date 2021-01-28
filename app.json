@@ -5,6 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -13,13 +14,21 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mypackage.notimp",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "config": {
+        
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.151973300631-mfl7pnflqoefp7vn6uoss7n1esn38ln4"
+        }
+      }
     },
     "android": {
+      "package": "com.mypackage.notimp",
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
